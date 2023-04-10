@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IP Mapper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get local and remote Internet Protocol information">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/float-grid.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body role="document">
+    <header role="banner">
+      <h1>IP Mapper</h1>
+    </header>
+    <main>
+      <fieldset role="group" class="map-controls">
+        <legend>Theme:</legend>
+        <input type="radio" id="default-theme" name="theme" value="default" checked>
+        <label for="default-theme">Light</label>  
+        <input type="radio" id="dark-theme" name="theme" value="dark">
+        <label for="dark-theme">Dark</label>
+      </fieldset>
+      <noscript>This page requires JavaScript.</noscript>
+      <div id="map">        
+      </div>
+      <div class="page" aria-live="polite">  
+        <form action="#" class="ip-start-form">
+          <div class="row host-results">
+            <div class="start">
+              <h2>Map Internet Protocol v4 Addresses</h2>
+              <p>Map IPv4 addresses radially, from the user&apos;s location and also in traceroute mode.</p>
+              <p>Press connect to get local user information and map remote public IPv4 Addresses.</p>
+              <p>Allow Location Access to the browser for a more accurately mapped user location.</p>
+            </div>
+          </div>
+          <fieldset role="group" class="form-controls">
+            <input type="submit" id="start" value="CONNECT">
+          </fieldset>
+        </form>
+      </div>     
+      <div class="search-results" aria-live="polite">          
+      </div>
+    </main>
+    <footer role="contentinfo">
+        <p>Last Updated on Sept 19, 2020</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <!-- Loading gmaps without async & defer attributes guarentees the `google` object loads before anything else -->
+    <!-- This way, no need for initMap callback -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCACNzsORCP0XW5NXCeigRB7DlB4sRlYq4&libraries=geometry"></script>
+    <script type="module" src="scripts/data/data.js"></script>
+    <script type="module" src="scripts/utils/template.js"></script>
+    <script type="module" src="scripts/utils/map-class.js"></script>
+    <script type="module" src="scripts/utils/get-info.js"></script>
+    <script type="module" src="scripts/ip-mapper.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

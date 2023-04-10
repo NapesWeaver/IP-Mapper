@@ -1,0 +1,360 @@
+noscript {
+  display: block;
+  margin: auto;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #DD4C40;
+}
+
+body {  
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+header {
+  padding-top: 0.3em;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin: 3px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+legend {
+  float: left;
+  padding-top: 3px;
+}
+
+label[for="#search-text"] {
+  font-size: 1.2em;
+}
+
+footer {
+  padding: 1px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#map {
+  height: 300px;
+  margin: auto;
+}
+
+#search-text {
+  width: 105px;
+  font-family: inherit;
+}
+
+.map-controls {
+  padding-left: 3%;
+}
+
+.start {
+  width: 90%;
+  margin: auto;
+}
+
+.ip-start-form .form-controls {
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+
+.form-controls {
+  padding-top: 2px;
+  padding-left: 0.8em;
+}
+
+.form-buttons {
+  display: inline-block;
+}
+
+.search,
+.host-results {
+  padding: 0.3em;
+}
+
+.result {
+  margin: 2px 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.result-controls {
+  float: right;
+}
+
+.delete-button,
+.focus-button {
+  display: block;
+  margin: 3px auto;
+}
+
+body,
+main,
+footer,
+.form-controls,
+.search-results {
+  background: #C5EFBA;
+}
+
+header,
+.map-controls,
+#map,
+.row {
+  max-width: 1920px;
+}
+
+header,
+.map-controls {
+  margin: auto;
+}
+
+header,
+.map-controls,
+.host-results,
+.result {
+  background: #F9F5E7;
+}
+
+input,
+label {
+	cursor: pointer;
+}
+
+.ellipsis {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis:hover {
+  overflow: visible;
+}
+
+/** Google Map InfoWindow CSS **/
+.info-window {
+  background: #E8EBDE;
+  padding: 9px;
+}
+
+.info-window h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.info-window h1,
+.info-window h2 {
+  margin-bottom: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info-window h2,
+.info-window li {
+  font-size: 0.9em;
+}
+
+/** Responsive CSS **/
+@media only screen and (min-width: 640px) {
+
+  body {
+    font-size: 0.9em;
+    line-height: 1.1em;
+  }
+ 
+  header {
+    padding-top: 1.5em;
+    padding-bottom: 0.1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0.3em;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h4 {
+    margin-left: 1em;
+  }
+
+  
+  legend {
+    padding-top: 2px;
+  }
+  
+  footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .start {
+    text-align: center;
+  }
+
+  .ip-start-form .form-controls {
+    margin-top: 1.5em;
+  }
+  
+  #map {
+    height: 380px;
+  }
+  
+  .map-controls {
+    padding-bottom: 0.3em;
+  }
+
+  .search-type {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
+  .form-controls {
+    text-align: center;
+  }
+
+  .search-type {
+    width: 250px;
+    margin: auto;
+  }
+
+  .result {
+    height: 138px;
+    margin: 2px 0;
+    border-right: 2px solid #C5EFBA;
+    border-left: 2px solid #C5EFBA;
+  }
+
+  .col-searches {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .col-host {
+    width: 45%;
+  }
+  
+  .result {
+    height: 149px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    line-height: 1.2em;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  legend {
+    padding-top: 0;
+  }
+
+  .search-type {
+    width: 300px;
+  }
+
+  #map {
+    height: 470px;
+  }
+
+  .search,
+  .search-type {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+  }
+
+  
+  .result {
+    margin: 3px 0;
+    border-right: 3px solid #C5EFBA;
+    border-left: 3px solid #C5EFBA;
+  }
+  
+  .delete-button,
+  .focus-button,
+  #search-text,
+  .search-type {
+    font-size: 1em;
+  }
+  
+  input[type="submit"],
+  input[type="reset"],  
+  .ip-start-form,
+  .search {
+    font-size: 1.2em;
+  }
+
+  #search-text {
+    width: 180px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+
+  .col-searches {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }  
+}
